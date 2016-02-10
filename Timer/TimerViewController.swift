@@ -24,7 +24,9 @@ class TimerViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateTimerBasedViews", name: Timer.kSeconds, object: nil)
+        
+        timerLabel.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,9 +98,7 @@ class TimerViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     func updateProgressView() {
         
         let secondsElasped = timer.totalSeconds - timer.seconds
-        
         let progress = Float(secondsElasped) / Float(timer.totalSeconds)
-        
         progressView.setProgress(progress, animated: true)
     }
     
