@@ -18,10 +18,10 @@ class Timer: NSObject {
     private var timer: NSTimer?
     var isOn: Bool {
         get {
-        if timer != nil {
-            return true
-        } else {
-            return false
+            if timer != nil {
+                return true
+            } else {
+                return false
             }
         }
     }
@@ -70,16 +70,18 @@ class Timer: NSObject {
     }
     
     func stopTimer() {
-        self.timer?.invalidate()
-        timer = nil
+        if isOn {
+            timer?.invalidate()
+            timer = nil
+        }
     }
     
     func secondTick() {
         seconds--
         NSNotificationCenter.defaultCenter().postNotificationName(Timer.kSeconds, object: self)
         if seconds <= 0 {
+            stopTimer()
             NSNotificationCenter.defaultCenter().postNotificationName(Timer.kComplete, object: self)
         }
     }
 }
-

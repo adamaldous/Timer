@@ -29,7 +29,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZ7-V5-U1e" userLabel="Timer Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="216"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wa-uK-bpT" userLabel="Picker Stack View">
@@ -45,7 +45,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXl-hn-ti0" userLabel="Hours">
                                                         <rect key="frame" x="247" y="0.0" width="46" height="216"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzZ-J1-a7q" userLabel="Minutes Picker View">
@@ -58,7 +58,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q59-EF-EMf" userLabel="Minutes">
                                                         <rect key="frame" x="539" y="0.0" width="61" height="216"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -138,7 +138,10 @@
                     <connections>
                         <outlet property="hoursPickerView" destination="ZyN-lS-Yvu" id="9NA-Iz-Lk5"/>
                         <outlet property="minutesPickerView" destination="dzZ-J1-a7q" id="Mkt-ba-5VZ"/>
+                        <outlet property="pauseButton" destination="wPK-cp-Fg8" id="mWD-hB-Ifm"/>
                         <outlet property="pickerStackView" destination="9wa-uK-bpT" id="zCj-gg-AYc"/>
+                        <outlet property="progressView" destination="lXP-Kh-ggs" id="141-od-9Qb"/>
+                        <outlet property="startButton" destination="31B-r9-29f" id="MEk-bQ-Ywi"/>
                         <outlet property="timerLabel" destination="AZ7-V5-U1e" id="d5b-di-hVu"/>
                     </connections>
                 </viewController>
@@ -161,7 +164,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alarm view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UH-ZM-aHQ">
                                 <rect key="frame" x="220" y="256" width="161" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
